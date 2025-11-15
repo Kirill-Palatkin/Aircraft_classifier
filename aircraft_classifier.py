@@ -102,9 +102,9 @@ def compare_models():
 
     results = []
 
-    print("-" * 40)
+    print("-" * 35)
     print("Модель: \033[32mgoogle/vit-base-patch16-224\033[0m")
-    print("-" * 40 + "\n")
+    print("-" * 35 + "\n")
 
     vit_results = []
     for i, row in dataset_vit.iterrows():
@@ -131,9 +131,9 @@ def compare_models():
         if i < len(dataset_vit) - 1:
             wait_with_countdown(REQUEST_DELAY)
 
-    print("\n" + "-" * 40)
-    print("\n\nМодель: \033[32mQwen/Qwen2.5-VL-72B-Instruct:hyperbolic\033[0m\n")
-    print("-" * 40)
+    print("\n\n" + "-" * 47)
+    print("Модель: \033[32mQwen/Qwen2.5-VL-72B-Instruct:hyperbolic\033[0m")
+    print("-" * 47 + "\n")
 
     qwen_results = []
     for i, row in dataset_qwen.iterrows():
