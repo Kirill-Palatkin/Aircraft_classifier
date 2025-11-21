@@ -95,7 +95,7 @@ def compare_models():
 
     try:
         dataset_vit = pd.read_csv("dataset.csv")  # локальные пути
-        dataset_qwen = pd.read_csv("dataset1.csv")  # URL
+        dataset_qwen = pd.read_csv("dataset_imgur_url.csv")  # URL
     except FileNotFoundError as e:
         print(f"Ошибка загрузки датасетов: {e}")
         return
